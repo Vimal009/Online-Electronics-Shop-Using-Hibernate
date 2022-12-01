@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Product</title>
+        <style>
+            body{
+                margin: 0 auto;
+                background-image: url("image1.jpg");
+                background-repeat: no-repeat;
+                background-size: 100% 800px;
+            }
+            h3{
+                color: black;
+            }
+            h1{
+                color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="GET" action="ApplianceController">
+        <center><b> <h1> Add Product</h1></b></center>   
+        <center><h3>Product Code:<input type="text" name="productcode"placeholder="Product Code"><br></h3></center>
+    <center><h3>Product Name:<input type="text" name="name"placeholder="Product Name"><br></h3></center>   
+    <center><h3>Product Type:<input type="text" name="type"placeholder="Product Type"><br></h3></center>   
+    <center><h3>Company Name:<input type="text" name="companyname" placeholder="Company Name"><br></h3></center>   
+    <center><h3>Product Price:<input type="text" name="price"placeholder="Product Price"><br></h3></center>   
+    <center><h3>Product Discount price:<input type="text" name="dprice"placeholder="Product Discount Price"><br></h3></center>   
+    <center><h3>Product Description:<input type="text" name="description"placeholder="Product Description"><br></h3></center>   
+    <center><h3>Stock Available:<input type="text" name="stockavailable"placeholder="Stock Available"><br></h3></center>   
+    <center><h3>Manufacturer Id:<input type="text" name="manufacturerid"placeholder="Manufacturer Id"><br></h3></center>   
+    <center><input type="submit" name="addAppliance" value="Add"><br><br>
+</form>   
+        <form action="ApplianceController" method="POST">
+        <center><input type="submit" name="showAppliance" value="Show"><br></center>          
+        </form>
+    </body>
+</html>
